@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/miama');
-
 :root {
     --bg_primary_color: #000000;
     --bg_secondary_color: #222222;
@@ -18,6 +17,12 @@ body {
     font-family: "Inter", sans-serif;
     background-color: var(--bg_primary_color);
 }
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 h1 {
     color: white;
@@ -25,13 +30,6 @@ h1 {
 
 p {
     color: white;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 /* navbar styles start here */
