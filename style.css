@@ -80,11 +80,6 @@ nav {
     border-radius: 46px;
 }
 
-.nav-links a:hover {
-    background-color: var(--btn_color);
-    transition: 0.3s ease-out;
-}
-
 .icon-bars > i {
     display: none !important;
 }
