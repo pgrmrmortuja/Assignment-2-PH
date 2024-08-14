@@ -548,7 +548,7 @@ td {
     display: flex;
     justify-content: center;
     background-color: var(--bg_secondary_color);
-    padding: 100px 0;
+    width: 100%;
 }
 
 .stories-container {
