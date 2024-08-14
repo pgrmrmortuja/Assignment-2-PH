@@ -85,7 +85,7 @@ nav {
     transition: 0.3s ease-out;
 }
 
-.icon-bars>i {
+.icon-bars > i {
     display: none !important;
 }
 
@@ -712,7 +712,7 @@ footer {
         display: none !important;
     }
 
-    .icon_bars>i {
+    .icon_bars > i {
         color: var(--title_text_color);
         display: block !important;
         font-size: 1.875rem;
