@@ -543,6 +543,69 @@ td {
 
 /* Meet Our Team section's style end here */
 
+/* Success Stories section's style start here */
+.success-stories {
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg_secondary_color);
+    padding: 100px 0;
+}
+
+.stories-container {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.stories-text {
+    text-align: center;
+}
+
+.stories-text h1 {
+    font-size: 48px;
+    color: var(--title_text_color);
+    font-weight: bolder;
+}
+
+.stories-text p {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 20px;
+    color: var(--describing_text_color);
+}
+
+.stories-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.story-card {
+    background-color: #191919;
+    border-radius: 12px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+.story-card h2 {
+    font-size: 22px;
+    margin-top: 20px;
+    color: var(--title_text_color);
+}
+
+.story-card p {
+    font-size: 16px;
+    color: var(--describing_text_color);
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* Success Stories section's style end here */
+
 /* footer's style start here */
 footer {
     background-color: var(--Footer_color);
@@ -739,44 +802,49 @@ footer {
 
     /* Run an Extra Mile Easily section start here */
     .run-content {
-        width: 90%;
-        justify-content: center;
         flex-direction: column;
-        padding-bottom: 50px;
-        border-radius: 25px;
+        align-items: center;
+        width: 90%;
+        margin-top: 50px;
+        padding: 20px;
     }
 
     .run-texts {
-        width: 80%;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .run-texts>h1 {
+        font-size: 28px;
     }
 
     .run-texts>p {
-        font-size: 20px;
-        line-height: 35px;
-        padding-bottom: 35px;
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 15px;
+        padding-bottom: 15px;
     }
 
     .join-now-btn {
-        box-sizing: border-box;
-        width: 100%;
-        font-size: 25px;
-        padding: 20px 0px 20px 0px;
+        font-size: 14px;
+        padding: 10px 40px;
     }
 
     .run-img {
-        box-sizing: border-box;
-        width: 400px;
-        height: 250px;
-        margin-right: 0px;
-        /* margin: 0 auto; */
-        border-radius: 25px;
+        width: 100%;
+        height: auto;
+        margin: 20px 0 0 0;
+        margin-right: 30px;
+
     }
 
     .run-img img {
-        zoom: 35%;
-        margin-left: -300px;
-        /* margin: 0 auto; */
-        margin-top: 0px;
+        margin-left: 0;
+        margin-top: 0;
+        zoom: 100%;
+        width: 100%;
+        height: auto;
     }
 
     /* Run an Extra Mile Easily section end here */
@@ -856,6 +924,18 @@ footer {
     }
 
     /* Meet Our Team section end here */
+
+    /* Success Stories section start here */
+    .stories-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .story-card {
+        width: 90%;
+    }
+
+    /* Success Stories section end here */
 
     /* footer start here  */
     .footer-container {
