@@ -1,0 +1,907 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
+
+:root {
+    --bg_primary_color: #000000;
+    --bg_secondary_color: #222222;
+    --btn_color: #E6533C;
+    --title_text_color: #ffffff;
+    --describing_text_color: #8a8a8a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--bg_primary_color);
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* navbar styles start here */
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 10px;
+    width: 80%;
+}
+
+.logo a {
+    color: var(--btn_color);
+    text-decoration: none;
+    font-size: 2.25rem;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    gap: 47px;
+    border: 1px solid #2f2f2f;
+    padding: 10px 2px 10px 2px;
+    border-radius: 46px;
+}
+
+.nav-links a {
+    color: var(--title_text_color);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 20px 8px 20px;
+    border-radius: 46px;
+}
+
+.home-btn {
+    background-color: var(--btn_color);
+    padding: 8px 20px 8px 20px;
+    border-radius: 46px;
+}
+
+.nav-links a:hover {
+    background-color: var(--btn_color);
+    transition: 0.3s ease-out;
+}
+
+.icon-bars>i {
+    display: none !important;
+}
+
+/* navbar styles end here */
+
+/* header styles start here */
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.banner-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 215px;
+    margin-top: 50px;
+    position: relative;
+    background-blend-mode: screen;
+    background: radial-gradient(rgb(37, 37, 37), rgb(0, 0, 0));
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 30%;
+    margin-right: 0px;
+    margin-top: 60px;
+
+}
+
+.banner-content>h1 {
+    font-size: 76px;
+    line-height: 90px;
+    font-weight: bold;
+}
+
+.shape {
+    font-family: 'Miama', sans-serif;
+    font-weight: 100;
+    font-size: 150px;
+
+}
+
+.banner-content>p {
+    font-size: 16px;
+    color: var(--describing_text_color);
+    line-height: 1.5rem;
+}
+
+.banner-btns {
+    display: flex;
+}
+
+.join-club-btn,
+.download-btn {
+    font-size: 18px;
+    padding: 11px 32px;
+    border-radius: 42px;
+    background-color: var(--btn_color);
+    border: none;
+    color: var(--title_text_color);
+}
+
+.download-btn {
+    background-color: transparent !important;
+    border: 1px solid #ffffff;
+    margin-left: 10px;
+}
+
+.banner-bgimg>img {
+    margin-right: 0px;
+}
+
+.b-500 {
+    position: absolute;
+    left: 76%;
+    top: 25%;
+    background-color: rgb(17, 101, 174);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px 20px;
+    background: rgba(255, 255, 255, 0.071);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.5px);
+    -webkit-backdrop-filter: blur(9.5px);
+    border: 1px solid rgba(141, 141, 141, 0.3);
+}
+
+.b-500>h1 {
+    font-size: 40px;
+    color: var(--title_text_color);
+    padding-bottom: 5px;
+}
+
+.b-500>span {
+    font-size: 16px;
+    color: var(--describing_text_color);
+}
+
+.b-350 {
+    position: absolute;
+    left: 55%;
+    top: 72%;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.071);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.5px);
+    -webkit-backdrop-filter: blur(9.5px);
+    border: 1px solid rgba(141, 141, 141, 0.3);
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    background-color: #E6533C;
+    border-radius: 100%;
+}
+
+.b-350 h1 {
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+.b-350 span {
+    font-size: 1rem;
+    color: var(--describing_text_color);
+}
+
+/* header styles end here */
+
+/* Change Your Habits section's style start here */
+.change-your-habits {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.habits-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 100px;
+}
+
+.habits-text {
+    text-align: center;
+    width: 40%;
+}
+
+.habits-text>h1 {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.habits-text>p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 20px;
+    color: var(--describing_text_color);
+}
+
+.habits-part {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+.habit-element {
+    width: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.habit-element>img {
+    border-radius: 100%;
+}
+
+.habit-element>h1 {
+    font-size: 18px;
+    font-weight: bolder;
+    padding-top: 30px;
+}
+
+.habit-element>p {
+    font-size: 16px;
+    padding-top: 10px;
+    color: var(--describing_text_color);
+    line-height: 20px;
+}
+
+/* Change Your Habits section's style end here */
+
+/* Run an Extra Mile Easily section's style start here */
+.run-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.run-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+    background-color: var(--bg_secondary_color);
+    border-radius: 15px;
+    width: 75%;
+    align-items: center;
+}
+
+.run-texts {
+    width: 40%;
+    padding: 40px;
+}
+
+.run-texts>h1 {
+    font-size: 45px;
+}
+
+.run-texts>p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 20px;
+    color: var(--describing_text_color);
+    padding-bottom: 20px;
+}
+
+.join-now-btn {
+    font-size: 16px;
+    padding: 15px 60px;
+    border-radius: 42px;
+    background-color: var(--btn_color);
+    border: none;
+    color: var(--title_text_color);
+}
+
+.run-img {
+    width: 350px;
+    height: 300px;
+    border-radius: 12px;
+    margin-right: 30px;
+    overflow: hidden;
+}
+
+.run-img img {
+    margin-left: -700px;
+    margin-top: -150px;
+    zoom: 70%;
+}
+
+/* Run an Extra Mile Easily section's style end here */
+
+/* BMI Calculator header section's syle start here */
+.bmi-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0px 100px 0px;
+}
+
+.bmi-texts {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bmi-header h1 {
+    font-size: 48px;
+}
+
+.bmi-header p {
+    color: var(--describing_text_color);
+    padding-top: 25px;
+}
+
+/* BMI Calculator header section's syle end here */
+
+/* BMI Calculator main section's syle start here */
+.bmi-container {
+    background-color: var(--bg_secondary_color);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.bmi-contents {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+th,
+td {
+    border: 1px solid #373737;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+td {
+    color: var(--describing_text_color);
+    font-size: 16px;
+}
+
+.calculator-part {
+    width: 55%;
+}
+
+.calculator-header p {
+    color: var(--describing_text_color);
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+.calculator-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.input-items {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.inputs,
+.select_activity {
+    padding: 15px 15px 15px 15px;
+    background-color: #373737;
+    color: var(--describing_text_color);
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.inputs {
+    width: 100%;
+}
+
+.select_activity {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.calculator-btn {
+    font-size: 16px;
+    padding: 15px 60px;
+    border-radius: 42px;
+    background-color: var(--btn_color);
+    border: none;
+    color: var(--title_text_color);
+    margin-top: 20px;
+}
+
+/* BMI Calculator main section's syle end here */
+
+/* Meet Our Team section's style start here */
+.meet-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding-bottom: 90px;
+}
+
+.meet-text {
+    text-align: center;
+    width: 65%;
+    margin-top: 80px;
+}
+
+.meet-text>h1 {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.meet-text>p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 20px;
+    color: var(--describing_text_color);
+}
+
+.meet-img-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #191919;
+    padding: 15px;
+    gap: 20px;
+    border-radius: 12px;
+}
+
+.meet-img-container img {
+    position: relative;
+    width: 350px;
+    height: 280px;
+}
+
+.meet-img {
+    display: flex;
+    gap: 20px;
+}
+
+.img_in_div {
+    width: 330px;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trainer-name {
+    position: absolute;
+    margin-top: 190px;
+    margin-left: -170px;
+}
+
+/* Meet Our Team section's style end here */
+
+/* footer's style start here */
+footer {
+    background-color: var(--Footer_color);
+    display: grid;
+    place-items: center;
+    background-color: #191919;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 100px;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.footer-container::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background-color: #2f2f2f;
+    width: 84%;
+    height: 1px;
+}
+
+.footer-main {
+    width: 27%;
+}
+
+.footer-main h1 {
+    color: #E6533C;
+    font-style: italic;
+    font-size: 60px;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+
+.footer-main p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.footer-content {
+    width: 15%;
+}
+
+.footer-content h1 {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bolder;
+    padding-bottom: 25px;
+}
+
+.footer-content p {
+    color: #777;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 40px;
+}
+
+.copyright {
+    color: #777;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 40px;
+    padding: 30px 0px 30px 0px;
+}
+
+/* footer's style end here */
+
+
+
+
+/* Responsive for mobile */
+@media screen and (max-width: 576px) {
+    body {
+        height: auto;
+        scroll-behavior: smooth;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* navbar start here */
+    nav {
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-container {
+        justify-content: left;
+    }
+
+    .nav-links {
+        display: none !important;
+    }
+
+    .icon_bars>i {
+        color: var(--title_text_color);
+        display: block !important;
+        font-size: 1.875rem;
+        width: 50px;
+        height: 50px;
+    }
+
+    /* navbar end here */
+
+    /* Header start here */
+    .banner-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        gap: 50px;
+    }
+
+    .banner-content {
+        width: 90%;
+    }
+
+    .banner-content>h1 {
+        font-size: 50px;
+        width: 60%;
+    }
+
+    .banner-content>p {
+        font-size: 23px;
+        width: 70%;
+        line-height: 2rem;
+    }
+
+    .banner-btns {
+        /* display: flex; */
+    }
+
+    .join-club-btn,
+    .download-btn {
+        font-size: 25px;
+        padding: 16px 40px 16px 40px;
+    }
+
+    .download-btn {
+        margin-left: 25px;
+    }
+
+    .banner-bgimg>img {
+        width: 450px;
+        height: 680px;
+    }
+
+    .b-500 {
+        left: 60%;
+        top: 60%;
+    }
+
+    .b-350 {
+        left: 10%;
+        top: 77%;
+    }
+
+    /* Header end here */
+
+
+    /* Change Your Habits section start here */
+    .habits-part {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .habit-element {
+        width: 60%;
+    }
+
+    .habit-element>img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .habits-text {
+        width: 90%;
+    }
+
+    /* Change Your Habits section end here */
+
+
+    /* Run an Extra Mile Easily section start here */
+    .run-content {
+        width: 90%;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 50px;
+        border-radius: 25px;
+    }
+
+    .run-texts {
+        width: 80%;
+    }
+
+    .run-texts>p {
+        font-size: 20px;
+        line-height: 35px;
+        padding-bottom: 35px;
+    }
+
+    .join-now-btn {
+        box-sizing: border-box;
+        width: 100%;
+        font-size: 25px;
+        padding: 20px 0px 20px 0px;
+    }
+
+    .run-img {
+        box-sizing: border-box;
+        width: 400px;
+        height: 250px;
+        margin-right: 0px;
+        /* margin: 0 auto; */
+        border-radius: 25px;
+    }
+
+    .run-img img {
+        zoom: 35%;
+        margin-left: -300px;
+        /* margin: 0 auto; */
+        margin-top: 0px;
+    }
+
+    /* Run an Extra Mile Easily section end here */
+
+
+    /* BMI Calculator header section start here */
+    .bmi-texts {
+        width: 90%;
+    }
+
+    .bmi-header h1 {
+        font-size: 48px;
+    }
+
+    .bmi-header p {
+        font-size: 23px;
+        padding-top: 25px;
+        line-height: 40px;
+    }
+
+    /* BMI Calculator header section end here */
+
+    /* BMI Calculator main section start here */
+    .bmi-contents {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    table {
+        width: 80%;
+        margin-bottom: 50px;
+    }
+
+    td {
+        padding: 20px 25px;
+    }
+
+    th {
+        padding: 20px 25px;
+    }
+
+    .calculator-part {
+        width: 100%;
+    }
+
+    .calculator-header p {
+        line-height: 35px;
+        font-size: 18px;
+    }
+
+    .inputs,
+    .select_activity {
+        font-size: 20px;
+        padding: 15px 25px 15px 25px;
+    }
+
+    .calculator-btn {
+        padding: 20px 90px;
+        font-size: 25px;
+        margin-top: 40px;
+    }
+
+    /* BMI Calculator main section end here */
+
+    /* Meet Our Team section start here */
+    .meet-img {
+        flex-direction: column;
+    }
+
+    .img_in_div {
+        width: 330px;
+        height: 260px;
+    }
+
+    .hidden-img {
+        display: none;
+    }
+
+    /* Meet Our Team section end here */
+
+    /* footer start here  */
+    .footer-container {
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .footer-container::before {
+        width: 100%;
+        height: 2px;
+    }
+
+    .footer-main {
+        width: 100%;
+    }
+
+    .footer-main h1 {
+        font-size: 75px;
+        font-weight: 600;
+    }
+
+    .footer-main p {
+        font-size: 18px;
+        line-height: 35px;
+        padding-top: 20px;
+    }
+
+    .footer-content {
+        width: 50%;
+    }
+
+    .footer-content h1 {
+        color: #ffffff;
+        font-size: 35px;
+        font-weight: bolder;
+        padding-bottom: 20px;
+    }
+
+    .footer-content p {
+        font-size: 25px;
+        line-height: 60px;
+    }
+
+    /* footer end here  */
+}
+
+/* responsive for mobile completed  */
